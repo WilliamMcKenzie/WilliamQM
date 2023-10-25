@@ -135,16 +135,16 @@ main {
     
     font-size: 1.25rem;
     
-    color: rgb(240, 240, 240);
+    color: rgb(255, 255, 255);
 
     padding-left: 20px;
     border-top-left-radius: 20px;
-    border-left: 6px solid var(--primary-light);
+    border-left: 6px solid var(--primary);
 }
 
 .about h1 {
-    color: #e6e6e6;
-    font-family: 'bold';
+    color: #ffffff;
+    font-family: 'main';
 }
 .about a {
     color: white;
@@ -152,7 +152,7 @@ main {
 
 .location {
     font-size: 1.2rem;
-    color: #d3d3d3;
+    color: var(--primary-font);
 }
 
 .jobs_container {
