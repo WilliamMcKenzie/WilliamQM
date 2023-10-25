@@ -1,0 +1,344 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    --font: 'main';
+    --light: 'light';
+    --bold: 'bold';
+
+    --primary-font: #4cc9f0;
+    --primary-light: #4895ef;
+    --primary: #4361ee;
+    --primary-dark: #3f37c9;
+    --primary-darker: #3a0ca3;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--font);
+    background-color: white;
+
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+}
+
+.header_bg {
+    width: 100vw !important;
+    height: auto !important;
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.header_filter {
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(180deg, rgba(63, 22, 75, 0.5) 0%, rgba(216,211,0,0) 100%);
+    
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.top_bar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin: 1rem;
+}
+.contact button {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 2rem;
+
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+
+    border-radius: 400px;
+    transition: 0.3s;
+}
+.contact button:hover {
+    background-color: rgba(111, 209, 255, 0.5);
+    cursor: pointer;
+}
+
+
+.top_bar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    transition: 0.3s;
+}
+.top_bar a:hover{
+    color: var(--primary-font);
+    cursor: pointer;
+}
+
+.header_title {
+    font-family: var(--bold);
+    font-size: 5rem;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main {
+    width: 100vw;
+    height: 200vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.about {
+    margin-top: 30vh;
+    width: 50vw;
+    
+    font-size: 1.25rem;
+    
+    color: rgb(240, 240, 240);
+
+    padding-left: 20px;
+    border-top-left-radius: 20px;
+    border-left: 6px solid var(--primary-light);
+}
+
+.about h1 {
+    color: #e6e6e6;
+    font-family: 'bold';
+}
+.about a {
+    color: white;
+}
+
+.location {
+    font-size: 1.2rem;
+    color: #d3d3d3;
+}
+
+.jobs_container {
+    width: 100vw;
+    background-color: white;
+}
+
+.jobs {
+    margin: auto;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+
+    width: 90vw;
+    padding-bottom: 20px;
+}
+.job {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 400px;
+    padding: 40px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.job img {
+    width: 100px;
+    height: 100px;
+    filter: saturate(0);
+
+    object-fit: cover;
+
+    border-radius: 4000px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    transition: 0.3s;
+}
+.job img:hover {
+    filter: saturate(1);
+}
+.job div {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #3f37c9;
+
+    border-radius: 4000px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.jobs h1 {
+    font-family: 'bold';
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.jobs h2 {
+    font-family: 'light';
+    font-weight: 500;
+    font-size: 1.2rem;
+    height: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.jobs p {
+    line-height: 2;
+}
+
+
+.projects {
+    width: 100vw;
+    background-color: white;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects_header {
+    font-family: 'bold';
+    font-weight: 400;
+    font-size: 3.5rem;
+    margin-top: 10vh;
+    margin-bottom: 0vh;
+}
+.projects_subheader {
+    font-size: 1.25rem;
+    margin-bottom: 20vh;
+}
+
+.project {
+    width: 70vw;
+    padding-right: 2.5vw;
+    overflow: hidden;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 10vh;
+}
+.project_header_top {
+    width: 55vw;
+    height: 30vh;
+    background: url('./images/profile_background.svg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    transform: scaleX(-1) translate(-50%, 0);
+    z-index: -1;
+}
+.project img {
+    border: 5px solid white;
+    width:50vw; 
+    height:30vw; 
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.project_subtitle {
+    font-size: 1rem;
+    font-family: 'main';
+    color: #b4b6b6;
+    margin: 0;
+    padding-top: 20px;
+}
+.project_title {
+    font-size: 2.5rem;
+    font-family: 'main';
+    margin: 0;
+}
+.project_disc {
+    line-height: 2;
+    font-family: var(--main-font);
+}
+.project_button {
+    color: var(--primary);
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 40px;
+    margin-top: auto;
+}
+.project_button:hover {
+    color: var(--primary-dark);
+    background-color: rgba(111, 209, 255, 0.5);
+    cursor: pointer;
+}
+
+.jobs {
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('./fonts/Inter-Light.ttf');
+}
+@font-face {
+    font-family: 'main';
+    src: url('./fonts/Inter-Regular.ttf');
+}
+@font-face {
+    font-family: 'bold';
+    src: url('./fonts/Inter-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'header_light';
+    src: url('./fonts/youtube-sans-light.ttf');
+}
+@font-face {
+    font-family: 'header_main';
+    src: url('./fonts/youtube-sans-medium.ttf');
+}
+@font-face {
+    font-family: 'header_bold';
+    src: url('./fonts/youtube-sans-bold.ttf');
+}

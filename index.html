@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WilliamQM</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="init()">
+    <div class="header">
+        <div class="header_filter"></div>
+        <img class="header_bg parallax" src="./images/header_background.svg"></img>
+        <div class="top_bar">
+            <a onclick="goTo('projects')">PROJECTS</a>
+            <a onclick="goTo('about')">ABOUT</a>
+            <a onclick="goTo('expereince')">EXPERIENCE</a>
+        </div>
+        <div class="contact">
+            <button class="contact_button" onclick="openTab('mail.google.com/mail/u/0/?hl=en#inbox?compose=GTvVlcSKjDcxfGJjWslTkDkQTnCVJFmdcfHkRMzgJDqQlGgknmPJFPVFZNBtdrnxDLSCjFJcssVCP')"><i class="fa fa-paper-plane"></i></button>
+            <button class="contact_button" onclick="openTab('instagram.com/william.quintus')"><i class="fa fa-instagram"></i></button>
+        </div>
+        <div style="display: flex;">
+            <h1 class="header_title">william mckenzie</h1>
+            <svg class="header_logo" style="height: 5rem; width: 5rem" viewBox="0 0 384 512"><path fill="white" d="M162.4 6c-1.5-3.6-5-6-8.9-6h-19c-3.9 0-7.5 2.4-8.9 6L104.9 57.7c-3.2 8-14.6 8-17.8 0L66.4 6c-1.5-3.6-5-6-8.9-6H48C21.5 0 0 21.5 0 48V224v22.4V256H9.6 374.4 384v-9.6V224 48c0-26.5-21.5-48-48-48H230.5c-3.9 0-7.5 2.4-8.9 6L200.9 57.7c-3.2 8-14.6 8-17.8 0L162.4 6zM0 288v32c0 35.3 28.7 64 64 64h64v64c0 35.3 28.7 64 64 64s64-28.7 64-64V384h64c35.3 0 64-28.7 64-64V288H0zM192 432a16 16 0 1 1 0 32 16 16 0 1 1 0-32z"/></svg>
+        </div>
+    </div>
+    <main>
+        <div class="about" id="about">
+            <p class="location">William McKenzie - Dartmouth NS</p>
+            <h1>Is it time for your website or app to get a
+                <a>modern & high performance</a> redesign?</h1>
+            Hey there! I'm William, a aspring developer from Canada. With a passion for technology, I've always been on the lookout for new opportunities to learn and grow. Welcome to my corner of the web, where I blend my tech enthusiasm, artistic flair, and a constant thirst for knowledge. Join me on this exciting journey!
+        </div>
+        <img src="./images/white_border.svg" style="width: 100vw; height: 10vw; margin-top: 20vh;">
+        <div class="jobs_container" id="experience">
+            <div class="jobs" id="experience">
+                <div class="job">
+                    <img src="./images/Firestreak.png">
+                    <h1>
+                        Firestreak
+                    </h1>
+                    <h2> Designer & 3D Modeller</h2>
+                    <p>
+                        At Firestreak I created various 3D models and textures to use as decoration, and came up with some UI designs as well as the layout of the lobby. You can find it <a href="https://discord.gg/DZfNRCJg">here.</a>
+                    </p>
+                </div>
+                <div class="job">
+                    <img src="https://th.bing.com/th/id/OIP.f7J7wkEPySelUfsASiVDYQHaHa?pid=ImgDet&rs=1">
+                    <h1>
+                        Darzas Dominion
+                    </h1>
+                    <h2> Pixel Artist</h2>
+                    <p>Over the 4 years I did volunteer work for Darzas Dominion I made countless assets, mostly consisting of monsters and terrain. You can find their website <a href="https://darzasdominion.com/">here,</a> and I display some of my work on <a href="https://ko-fi.com/crepertime/gallery">kofi</a></p>
+                </div>
+                <div class="job">
+                    <img src="https://cdn.dribbble.com/users/5976/screenshots/5732194/2018_most_popular_dribbble_logos_logo_design_by_alex_tass.gif">
+                    <h1>
+                        Your company!
+                    </h1>
+                    <h2></h2>
+                    <p style="text-align: center;">
+                        You could be next, contact me at <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=GTvVlcSKjDcxfGJjWslTkDkQTnCVJFmdcfHkRMzgJDqQlGgknmPJFPVFZNBtdrnxDLSCjFJcssVCP">williamqmckenzie@gmail.com</a> for more info!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h1 class="projects_header">Previous Projects</h1>
+            <p class="projects_subheader">I have made various projects ranging from fullstack web apps to vanilla html/JS websites.</p>
+            <div class="project">
+              <img src="./images/bulkinator.png" style='width:50vw; height:30vw; border-radius: 20px;'>
+              <div style="display: flex; flex-direction: column;">
+                <p class="project_subtitle">
+                  Meal planner/searcher
+                </p>
+                <p class="project_title">
+                  Bulkinator
+                </p>
+                <p class="project_disc">
+                  Using React with NextJS and Material UI for the frontend, and MongoDB with Prisma for the backend I created a automatic meal planner and searcher using the <a href="https://developer.edamam.com/edamam-docs-recipe-api">Edamame API</a> with account creation, the ability to save recipes and meal plans.
+                </p>
+                <div style="display: flex; margin-top: auto; margin-bottom: 10px;">
+                <button class="project_button" onclick="openTab('bulkinator.williamqm.com')"><i class="fa fa-link"></i></button>
+                <button class="project_button" onclick="openTab('github.com/WilliamMcKenzie/bulkinator')"><i class="fa fa-github"></i></button>
+                </div>
+            </div>
+            </div>
+            <div class="project">
+              <img src="./images/pixoforge.png" style='width:50vw; height:30vw; border-radius: 20px;'>
+              <div style="display: flex; flex-direction: column;">
+                <p class="project_subtitle">
+                  Meal planner/searcher
+                </p>
+                <p class="project_title">
+                  PixoForge
+                </p>
+                <p class="project_disc">
+                  I was inspired to make this as when I practiced pixel art I usually ended up going to other sites to look for inspiration. So I put it all in one place with Pixoforge while learning how to manipulate the HTML5 Canvas.
+                </p>
+                <div style="display: flex; margin-top: auto; margin-bottom: 10px;">
+                <button class="project_button" onclick="openTab('pixoforge.williamqm.com')"><i class="fa fa-link"></i></button>
+                <button class="project_button" onclick="openTab('github.com/WilliamMcKenzie/PixoForge')"><i class="fa fa-github"></i></button>
+                </div>
+            </div>
+            </div>
+            <div class="project">
+              <img src="./images/linear.png" style='width:50vw; height:30vw; border-radius: 20px;'>
+              <div style="display: flex; flex-direction: column;">
+                <p class="project_subtitle">
+                  Meal planner/searcher
+                </p>
+                <p class="project_title">
+                  Linear Systems
+                </p>
+                <p class="project_disc">
+                  I did this at the request of my Math teacher, and it was challenging to convert the algebra into usable numbers. The result though was a program that could solve any 2 part linear equation, and use the <a href="https://www.desmos.com/api/v1.8/docs/index.html">Desmos API</a> to graph it.
+                </p>
+                <div style="display: flex; margin-top: auto; margin-bottom: 10px;">
+                    <button class="project_button" onclick="openTab('linear.williamqm.com')"><i class="fa fa-link"></i></button>
+                    <button class="project_button" onclick="openTab('github.com/WilliamMcKenzie/LinearEquationSolver')"><i class="fa fa-github"></i></button>
+                </div>
+              </div>
+            </div>
+        <img src="./images/white_border.svg" style="width: 100vw; height: 10vw; transform: rotate(180deg);">
+    </main>
+    <script src="script.js"></script>
+    <!-- simpleParallax -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="https://kit.fontawesome.com/350f22f69a.js" crossorigin="anonymous"></script>
+</body>
+</html>
