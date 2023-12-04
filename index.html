@@ -10,7 +10,7 @@
 <body onload="init()">
     <div class="header">
         <div class="header_filter"></div>
-        <img class="header_bg parallax" src="./images/header_background.svg"></img>
+        <div class="header_bg parallax"></div>
         <div class="top_bar">
             <a onclick="goTo('projects')">PROJECTS</a>
             <a onclick="goTo('about')">ABOUT</a>
@@ -114,15 +114,16 @@
                   Chess Bot Arena
                 </p>
                 <p class="project_disc">
-                  This project involved hand coding chess AI using the minimax algorithm & alpha beta pruning, as well as the ability for the user to create their own bots, then battle them against eachother. All move handeling was done through webworkers.
+                  This project involved hand coding chess AI using the minimax algorithm, as well as the ability for the user to create their own bots, then battle them against eachother via websockets. All move handeling was done through webworkers.
                 </p>
-                <div style="display: flex; margin-top: auto; margin-bottom: 10px;">
+                <div style="display: flex; margin-top: 0;">
                     <button class="project_button" onclick="openTab('chess.williamqm.com')"><i class="fa fa-link"></i></button>
                     <button class="project_button" onclick="openTab('github.com/WilliamMcKenzie/FrictionlessChess')"><i class="fa fa-github"></i></button>
                 </div>
               </div>
             </div>
-        <img src="./images/white_border.svg" style="width: 100vw; height: 10vw; transform: rotate(180deg);">
+          </div>
+          <img src="./images/white_border.svg" style="width: 100vw; height: 10vw; transform: rotate(180deg);">
     </main>
     <script src="script.js"></script>
     <!-- simpleParallax -->
