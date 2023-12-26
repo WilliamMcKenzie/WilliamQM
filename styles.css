@@ -164,9 +164,10 @@ main {
 
 .jobs {
     margin: auto;
-    display: grid;
     grid-gap: 1em;
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
 
     width: 90vw;
     padding-bottom: 20px;
@@ -333,7 +334,9 @@ main {
         width: 80vw;
     }
     .jobs {
-        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
     }
     .jobs h1 {
         font-size: 4vw;
