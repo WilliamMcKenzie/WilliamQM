@@ -13,7 +13,7 @@ const brand_font_init = MuseoModerno({
 });
 
 export const metadata = {
-  title: "Imperium",
+  title: "WilliamQM",
   description: "Powered by NextJS",
 };
 

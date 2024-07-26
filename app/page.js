@@ -67,7 +67,7 @@ export default function Home() {
               William McKenzie - Dartmouth NS
             </h2>
             <p>
-              Hey there! I'm William, a developer from Canada with a passion for technology. I have always had a drive in me to create, whether it be making slingshots in my backyard or websites in vscode. I follow my nature and do what I am interested in at any given moment, hence the variety of different hobbies on this page. When not working I am usually going to the gym, meditating, or spending time with the boys.
+              Hey there! Im William, a developer from Canada with a passion for technology. I have always had a drive in me to create, whether it be making slingshots in my backyard or websites in vscode. I follow my nature and do what I am interested in at any given moment, hence the variety of different hobbies on this page. When not working I am usually going to the gym, meditating, or spending time with the boys.
             </p>
         </div>
       </div>
@@ -101,7 +101,7 @@ export default function Home() {
             <p className={styles.project_subtitle}>MMO/Video Game</p>
             <p className={styles.project_title}>Kingdom Crusher</p>
             <p className={styles.project_disc}>
-            This project was born from my nostalgia for the game Darza's Dominion. Along with my friend Max, we set out to make a cross platform web/mobile/pc realmlike MMO in Godot, with no gamedev experience might I add. Suprisingly, between his vector math and my multiplayer experience we actually managed to get a working product shipped.
+            This project was born from my nostalgia for the game Darzas Dominion. Along with my friend Max, we set out to make a cross platform web/mobile/pc realmlike MMO in Godot, with no gamedev experience might I add. Suprisingly, between his vector math and my multiplayer experience we actually managed to get a working product shipped.
             </p>
             <div style={{ display: 'flex', marginTop: 0, marginBottom: "10px", height: "100%" }}>
               <button className={styles.project_button} onClick={() => openInNewTab('http://www.kingdomcrusher.com')}>
