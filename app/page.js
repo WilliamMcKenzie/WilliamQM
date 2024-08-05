@@ -37,9 +37,11 @@ export default function Home() {
         <GitHub sx={{ color: "var(--blue)", marginRight: "10rem"}} onClick={() => openInNewTab("https://github.com/WilliamMcKenzie?tab=repositories")}></GitHub>
       </div>
       <div className={styles.hero_wrapper}>
-        <iframe className={styles.hero_video} width="1600" height="900"
-          src="https://www.youtube.com/embed/yzNsgiShRBM?autoplay=1&mute=1&loop=1">
-        </iframe>
+        <img
+            src="background.jpg"
+            className={styles.hero_video} width="1600" height="900"
+            alt="Flower Background"
+          />
         <div className={styles.video_overlay}>
           <button className={`${styles.namestamp} brand_font`}>
             WILLIAM MCKENZIE
