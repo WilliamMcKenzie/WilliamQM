@@ -104,7 +104,7 @@ export default function Home() {
             This project was born from my nostalgia for the game Darzas Dominion. Along with my friend Max, we set out to make a cross platform web/mobile/pc realmlike MMO in Godot, with no gamedev experience might I add. Suprisingly, between his vector math and my multiplayer experience we actually managed to get a working product shipped.
             </p>
             <div style={{ display: 'flex', marginTop: 0, marginBottom: "10px", height: "100%" }}>
-              <button className={styles.project_button} onClick={() => openInNewTab('http://www.kingdomcrusher.com')}>
+              <button className={styles.project_button} onClick={() => openInNewTab('http://kingdomcrusher.vercel.app')}>
                 <FontAwesomeIcon icon={faLink} />
               </button>
             </div>
