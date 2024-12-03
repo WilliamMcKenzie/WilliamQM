@@ -13,7 +13,7 @@
 
 /* NAVBAR SECTION */
 .navbar {
-  position: absolute;
+  position: fixed;
   width: calc(100vw);
   top: 0;
 
@@ -23,6 +23,8 @@
   align-items: center;
 
   border-bottom: 1px solid rgb(227, 227, 227);
+  background-color: white;
+  z-index: 99;
 }
 .navbar a {
   margin: 1rem;
@@ -41,11 +43,12 @@
 
 /* HERO SECTION */
 .hero_video {
-  width: calc((100vw - 20rem + 160px));
-  height: calc(400px + (100vw - 20rem)*((9/16)));
+  width: 100vw;
+  height: 100vh;
 }
 .hero_wrapper {
-  position: relative;
+  top: 0;
+  position: fixed;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -53,9 +56,8 @@
 }
 .hero_wrapper,
 .video_overlay {
-  width: 100%;
-  height: calc((100vw - 20rem)*(8/16));
-  border-radius: 20px;
+  width: 100vw;
+  height: 100vh;
 }
 .video_overlay {
   position: absolute;
@@ -64,7 +66,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.4);
 }
 .namestamp {
   background-color: transparent;
@@ -84,7 +85,7 @@
   transform: translate(-50%, -50%);
   width: 102%;
   height: 102%;
-  filter: opacity(0.2);
+  filter: opacity(0.1);
 }
 .svg_blend2 {
   position: absolute;
@@ -136,7 +137,7 @@
 /* Project */
 
 .projects_wrapper {
-  margin-top: 8rem;
+  margin-top: 6rem;
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -166,13 +167,21 @@
   transform: scaleX(-1) translate(-50%, 0);
   z-index: -1;
 }
-.project img {
+
+
+.project_img {
   border: 5px solid white;
   width:50vw; 
   height:30vw; 
   border-radius: 20px;
   margin-right: 20px;
 }
+.about_img {
+  border: 5px solid white;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
 .project_subtitle {
   font-size: 1vw;
   color: #b4b6b6;
@@ -197,6 +206,9 @@
   border: transparent;
   border-radius: 40px;
   margin-top: auto;
+}
+.github_button {
+  font-size: 2vw;
 }
 .project_button:hover {
   color: #2c32e1;
@@ -244,4 +256,117 @@
   font-weight: 600;
   font-size: 2rem;
   color: white;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 4rem;
+    min-height: 100vh;
+  
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  .projects_wrapper {
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .project {
+    width: auto;
+    padding-right: 2.5vw;
+    overflow: hidden;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 10vh;
+    align-items: center;
+  }
+  .project div {
+    margin: 1rem;
+  }
+  .project div div {
+    margin: 0;
+    margin-bottom: 0 !important;
+  }
+
+  .project_header_top {
+    width: 55vw;
+    height: 30vh;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    transform: scaleX(-1) translate(-50%, 0);
+    z-index: -1;
+  }
+  .project_img {
+    border: 5px solid white;
+    width:75vw !important; 
+    height:45vw !important; 
+    border-radius: 20px;
+    margin-right: 0;
+  }
+  .about_img {
+    border: 5px solid white;
+    width:80vw !important; 
+    height:60vw !important; 
+    border-radius: 20px;
+    margin-right: 0;
+  }
+
+  .project_subtitle {
+    font-size: 1.5vh;
+    color: #b4b6b6;
+    margin: 0;
+    padding-top: 20px;
+  }
+  .project_title {
+    font-size: 3vh;
+    margin: 0;
+  }
+  .project_disc {
+    font-size: 1.5vh;
+    line-height: 2;
+    font-family: var(--main-font);
+  }
+  .project_button {
+    color: #3A86FF;
+    font-size: 3vh;
+    width: 8vh;
+    height: 8vh;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 40px;
+    margin-top: auto;
+  }
+  .github_button {
+    font-size: 4vh;
+  }
+  .project_button:hover {
+    color: #2c32e1;
+    background-color: rgba(111, 209, 255, 0.5);
+    cursor: pointer;
+  }
+
+  .left_buffer {
+    margin-left: 5rem;
+  }
+  .right_buffer {
+    margin-right: 5rem;
+  }
 }
