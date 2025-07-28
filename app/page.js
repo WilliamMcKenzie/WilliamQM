@@ -77,6 +77,8 @@ export default function Home() {
             <p className={styles.project_disc}>
             I'm William, a Canadian highschool student with a passion for learning. I am currently building Kingdom Crushers, and trying to hit that 315 bench press. Don't hesitate to email me if you wanna connect!
             <br/>
+            <br/>
+            <br/>
             (PS I made this website myself from scratch, wavy background and all, if you want me to make you a similar portfolio site hmu)
             </p>
           </div>
